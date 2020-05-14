@@ -1,19 +1,10 @@
 ---
-layout: archive
+layout: default
 ---
 
 {{ content }}
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
-
-{% if paginator %}
-  {% assign posts = paginator.posts %}
-{% else %}
-  {% assign posts = site.posts %}
-{% endif %}
-
-{% for post in posts %}
-  {% include archive-single.html %}
-{% endfor %}
-
-{% include paginator.html %}
+<meta charset="utf-8">
+<title>Redirecting to Home</title>
+<meta http-equiv="refresh" content="0; URL=https://dawdlediscord.github.io/home/">
+<link rel="canonical" href="https://dawdlediscord.github.io/home/">
